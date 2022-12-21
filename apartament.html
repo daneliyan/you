@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Квартира</title>
+
+  <!-- favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.svg">
+<link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<link rel="icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<meta name="msapplication-tilecolor" content="#fff">
+<meta name="msapplication-tileimage" content="img/favicon/favicon.svg">
+<meta name="theme-color" content="#0d53db">
+
+<!-- CSS -->
+<link href="css/fancybox.min.css" type="text/css" rel="stylesheet">
+<!-- SWIPER -->
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+<!-- CHOICES -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+<link href="css/style.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+<header class="header">
+	<div class="container header__container">
+		<a href="index.html" class="logo">
+			<img src="img/logo-black.png" alt="">
+		</a>
+		<nav class="nav" id="nav-menu">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="index.html" class="nav__link nav__link-active">главная</a></li>
+				<li class="nav__item"><a href="catalog.html" class="nav__link">каталог</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">квартиры</a></li>
+				<li class="nav__item"><a href="services.html" class="nav__link">услуги</a></li>
+				<li class="nav__item"><a href="news.html" class="nav__link">новости</a></li>
+				<li class="nav__item"><a href="about.html" class="nav__link">о компании</a></li>
+				<li class="nav__item"><a href="contacts.html" class="nav__link">контакты</a></li>
+			</ul>
+			<ul class="course__list">
+				<li class="course__item">
+					<div class="course__item-name">BTC</div>
+					<div class="course__item-rate green-color">$ 43 212,3</div>
+				</li>
+				<li class="course__item">
+					<div class="course__item-name">ETH</div>
+					<div class="course__item-rate green-color">$ 2 887,61</div>
+				</li>
+				<li class="course__item">
+					<div class="course__item-name">USD</div>
+					<div class="course__item-rate green-color">117,43 ₽</div>
+				</li>
+				<li class="course__item">
+					<div class="course__item-name">CNY</div>
+					<div class="course__item-rate red-color">16,36 ₽</div>
+				</li>
+			</ul>
+			<div class="nav__close" id="nav-close">
+				<i class="icomoon icon-close"></i>
+			</div>
+		</nav>
+		<div class="nav__btns">
+			<a href="#" class="btn-icon">
+				<i class="icomoon icon-favourites"></i>
+			</a>
+			<div class="lang">
+				<div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+				<div class="lang-content">
+					<div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+					<div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+					<div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+				</div>
+			</div>
+			<a href="#" class="btn-icon">
+				<i class="icomoon icon-search"></i>
+			</a>
+			<a href="#" class="btn-icon">
+				<i class="icomoon icon-logout"></i>
+			</a>
+			<!-- Toggle button -->
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="icomoon icon-menu"></i>
+			</div>
+		</div>
+	</div>
+</header>
+
+    <main class="page-apartament">
+
+      <!-- breadcrumbs -->
+<div class="breadcrumbs">
+  <nav class="container">
+    <a href="index.html">Главная</a>
+    <a href="#">Москва</a>
+    <a href="#">Купить</a>
+    <a href="#">Квартира</a>
+    <span>3-к, Логинова, 19</span>
+  </nav>
+</div>
+
+      <section class="apart">
+  <div class="container">
+    <div class="apart-heading">
+      <div class="heading">
+        <h1 class="heading-3">3-к, Логинова, 19</h1>
+        <p class="text-3">Архангельская область, Архангельск, Октябрьский</p>
+      </div>
+      <div class="apart-heading-nav">
+        <a href="#" class="btn-ic"><i class="icomoon icon-favourites"></i></a>
+        <a href="img/logo-black.png" download="filename" class="btn-ic"><i class="icomoon icon-download"></i></a>
+      </div>
+    </div>
+    <div class="apart-container">
+      <div class="apart-left">
+        <div class="apart-slider">
+          <div class="btns-group">
+            <a href="#" class="btn-w active"><img src="img/icons/image.svg" alt=""><span>27 фото</span></a>
+            <a href="#" class="btn-w"><img src="img/icons/plan.svg" alt=""><span>Планировка</span></a>
+            <a href="#" class="btn-w"><img src="img/icons/3d.png" alt=""><span>3D-просмотр</span></a>
+            <a href="#" class="btn-w"><img src="img/icons/location.svg" alt=""><span>На карте</span></a>
+            <a href="#" class="btn-w"><img src="img/icons/video.svg" alt=""><span>Видео</span></a>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper apartMainSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-1.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-1.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-2.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-2.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-1.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-1.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-2.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-2.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-1.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-1.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-2.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-2.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-1.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-1.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-2.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-2.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-1.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-1.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-2.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-2.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-1.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-1.jpg">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="img/apartament/apart-img-2.jpg" data-fancybox="galleryApart">
+                  <img src="img/apartament/apart-img-2.jpg">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-button-next--fluid"></div>
+            <div class="swiper-button-prev--fluid"></div>
+            <div class="swiper-pagination--fluid"></div>
+          </div>
+          <div thumbsSlider="" class="swiper apartSecondSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/apartament/apart-img-1.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-2.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-1.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-2.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-1.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-2.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-1.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-2.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-1.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-2.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-1.jpg"></div>
+              <div class="swiper-slide"><img src="img/apartament/apart-img-2.jpg"></div>
+            </div>
+          </div>
+        </div>
+        <div class="apart-info-group">
+          <div class="apart-info-item">
+            <div class="apart-info-title">общая</div>
+            <div class="apart-info-value">57,1 м²</div>
+          </div>
+          <div class="apart-info-item">
+            <div class="apart-info-title">жилая</div>
+            <div class="apart-info-value">33,1 м²</div>
+          </div>
+          <div class="apart-info-item">
+            <div class="apart-info-title">кухня</div>
+            <div class="apart-info-value">10,3 м²</div>
+          </div>
+          <div class="apart-info-item">
+            <div class="apart-info-title">из 12</div>
+            <div class="apart-info-value">6 этаж</div>
+          </div>
+          <div class="apart-info-item">
+            <div class="apart-info-title">потолки</div>
+            <div class="apart-info-value">2,8 м</div>
+          </div>
+          <div class="apart-info-item">
+            <div class="apart-info-title">год постройки</div>
+            <div class="apart-info-value">2022 год</div>
+          </div>
+        </div>
+        <div class="apart-right">
+          <div class="apart-card">
+            <div class="price-dropdown">
+              <div class="price">
+                <img src="img/apartament/wallet.svg" alt="">
+                <span>19 800 000</span>
+                <div class="price-arrow">₽</div>
+              </div>
+              <ul class="price-dropdown-content">
+                <li><img src="img/icons/dollar.svg" alt=""><span>209 800 000</span></li>
+                <li><img src="img/icons/ruble.svg" alt=""><span>100 800 000 000</span></li>
+                <li><img src="img/icons/bitcoin.svg" alt=""><span>200.210</span></li>
+                <li><img src="img/icons/ethereum.svg" alt=""><span>400.210</span></li>
+                <li><img src="img/icons/yen.svg" alt=""><span>300 000 000</span></li>
+              </ul>
+            </div>
+            <div class="objects-square"><img src="img/icons/square.png" alt="">360 161 ₽/м2</div>
+            <div class="apart-second">
+              <div class="cards-date">Добавлено: 15.03.22</div>
+              <div class="cards-views">119 просмотров</div>
+            </div>
+            <div class="apart-btns">
+              <a href="#" class="btn btn-md"><img src="img/icons/bitcoin-white.svg" alt=""><span>Купить</span></a>
+              <a href="#" class="btn-second btn-md">Забронировать</a>
+            </div>
+          </div>
+          <div class="expert">
+            <div class="expert-info">
+              <div class="expert-info-main">
+                <img src="img/kp/expert-img.jpg" alt="">
+                <div class="expert-info-content">
+                  <span>об этом объекте все знает:</span>
+                  <h4>Юрий Утилин</h4>
+                </div>
+              </div>
+              <div class="expert-descr">Эксперт в агентстве недвижимости</div>
+              <a href="tel:79005005640" class="phone"><i class="icomoon icon-calling-bold"></i><span>+7 (900)
+                  500–56–40</span></a>
+            </div>
+            <div class="form-title">Или оставьте ваш номер и я вам перезвоню:</div>
+            <form action="#" class="form expert-form">
+              <div class="row">
+                <label for="" class="form-label">
+                  <input type="number" name="" id="" class="form-input" placeholder="Ваш номер телефона">
+                </label>
+                <button class="btn btn-md">Перезвоните мне</button>
+              </div>
+              <label for="checkboxCta" class="accept checkbox">
+                <input type="checkbox" id="checkboxCta">
+                <span>Даю согласие на обработку <a href="#">персональных данных</a></span>
+              </label>
+            </form>
+          </div>
+        </div>
+        <div class="info apart-info">
+          <div class="info-heading">
+            <h3 class="heading-3">Описание объекта:</h3>
+          </div>
+          <div class="readmore js-read-more" data-rm-words="65">
+            <p>Лот: 9216. В продаже двухуровневый пентхаус с отделкой в ЖК "Онегин" на Якиманке.</p>
+            <p>Планировка:</p>
+            <p>На первом уровне располагается просторная кухня-гостиная, 2 спальни с санузлом, гостевой санузел. Есть терраса с
+              панорамным видом на центр города.</p>
+            <p>На втором уровне располагается основная спальня со своим санузлом, гардеробной и террасой.</p>
+            <p>Выполнена отделка в современном стиле, пентхаус меблирован и оснащен качественной бытовой техникой.</p>
+            <p>В стоимость включены 2 машино-места в подземном паркинге.</p>
+            <p>It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear
+              as
+              among the most important decisions that will be made during my incumbency in the office of the Presidency.</p>
+            <p>In the last 24 hours we have seen facilities now being created for the greatest and most complex exploration in
+              man's history. </p>
+            <p>Because that goal will serve to organize and measure the best of our energies and skills, because that challenge
+              is
+              one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the
+              others,
+              too.</p>
+          </div>
+        </div>
+        <div class="apart-general">
+          <div class="info-heading">
+            <h3 class="heading-3">Общая информация</h3>
+          </div>
+          <ul class="apart-general-list">
+            <li class="apart-general-item">
+              <div class="apart-general-title">Тип жилья</div>
+              <hr>
+              <div class="apart-general-value">Вторичка Пентхаус</div>
+            </li>
+            <li class="apart-general-item">
+              <div class="apart-general-title">Высота потолков</div>
+              <hr>
+              <div class="apart-general-value">3,2 м</div>
+            </li>
+            <li class="apart-general-item">
+              <div class="apart-general-title">Санузел</div>
+              <hr>
+              <div class="apart-general-value">3 совмещенных</div>
+            </li>
+            <li class="apart-general-item">
+              <div class="apart-general-title">Балкон/лоджия</div>
+              <hr>
+              <div class="apart-general-value">1 балкон</div>
+            </li>
+            <li class="apart-general-item">
+              <div class="apart-general-title">Ремонт</div>
+              <hr>
+              <div class="apart-general-value">Дизайнерский</div>
+            </li>
+            <li class="apart-general-item">
+              <div class="apart-general-title">Вид из окон</div>
+              <hr>
+              <div class="apart-general-value">На улицу и двор</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="request">
+  <div class="container">
+    <div class="request-wrapper">
+      <div class="heading">
+        <h3 class="heading-3">Заявка на подбор недвижимости</h3>
+        <p class="text-2">Оставьте свои контактные данные и с Вами свяжется наш риэлтор.</p>
+      </div>
+      <form action="#" class="form">
+        <label for="" class="form-label">
+          <input type="number" name="" id="" class="form-input form-input--big" placeholder="Ваш номер телефона">
+        </label>
+        <div class="col">
+          <button class="btn btn-xl">Оставить заявку</button>
+          <label for="checkboxRequest" class="accept checkbox">
+            <input type="checkbox" id="checkboxRequest">
+            <span>Даю согласие на обработку <a href="#">персональных данных</a></span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <section class="similar">
+  <div class="container">
+    <div class="heading">
+      <h2 class="heading-2">Похожие объявления</h2>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper similarSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="similar-slide">
+              <div class="similar-slide-img">
+                <img src="img/apartament/apart-img-1.jpg" alt="">
+              </div>
+              <div class="similar-slide-content">
+                <div class="similar-price">
+                  <div class="price"><div class="price-progress"></div><span>19 800 000 ₽</span></div>
+                </div>
+                <div class="heading-3">57,1 м², 2-комнатная квартира</div>
+                <div class="specifications">
+                  <div class="specifications-item"><img src="img/similar/rooms.png" alt=""><span>2 комнаты</span></div>
+                  <div class="specifications-item"><img src="img/similar/square.png" alt=""><span>54 м²</span></div>
+                </div>
+                <p class="text-2">Ленинградский проспект, 37</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="similar-slide">
+              <div class="similar-slide-img">
+                <img src="img/apartament/apart-img-1.jpg" alt="">
+              </div>
+              <div class="similar-slide-content">
+                <div class="similar-price">
+                  <div class="price"><div class="price-progress"></div><span>19 800 000 ₽</span></div>
+                </div>
+                <div class="heading-3">57,1 м², 2-комнатная квартира</div>
+                <div class="specifications">
+                  <div class="specifications-item"><img src="img/similar/rooms.png" alt=""><span>2 комнаты</span></div>
+                  <div class="specifications-item"><img src="img/similar/square.png" alt=""><span>54 м²</span></div>
+                </div>
+                <p class="text-2">Ленинградский проспект, 37</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="similar-slide">
+              <div class="similar-slide-img">
+                <img src="img/apartament/apart-img-1.jpg" alt="">
+              </div>
+              <div class="similar-slide-content">
+                <div class="similar-price">
+                  <div class="price"><div class="price-progress"></div><span>19 800 000 ₽</span></div>
+                </div>
+                <div class="heading-3">57,1 м², 2-комнатная квартира</div>
+                <div class="specifications">
+                  <div class="specifications-item"><img src="img/similar/rooms.png" alt=""><span>2 комнаты</span></div>
+                  <div class="specifications-item"><img src="img/similar/square.png" alt=""><span>54 м²</span></div>
+                </div>
+                <p class="text-2">Ленинградский проспект, 37</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="similar-slide">
+              <div class="similar-slide-img">
+                <img src="img/apartament/apart-img-1.jpg" alt="">
+              </div>
+              <div class="similar-slide-content">
+                <div class="similar-price">
+                  <div class="price"><div class="price-progress"></div><span>19 800 000 ₽</span></div>
+                </div>
+                <div class="heading-3">57,1 м², 2-комнатная квартира</div>
+                <div class="specifications">
+                  <div class="specifications-item"><img src="img/similar/rooms.png" alt=""><span>2 комнаты</span></div>
+                  <div class="specifications-item"><img src="img/similar/square.png" alt=""><span>54 м²</span></div>
+                </div>
+                <p class="text-2">Ленинградский проспект, 37</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="similar-slide">
+              <div class="similar-slide-img">
+                <img src="img/apartament/apart-img-1.jpg" alt="">
+              </div>
+              <div class="similar-slide-content">
+                <div class="similar-price">
+                  <div class="price"><div class="price-progress"></div><span>19 800 000 ₽</span></div>
+                </div>
+                <div class="heading-3">57,1 м², 2-комнатная квартира</div>
+                <div class="specifications">
+                  <div class="specifications-item"><img src="img/similar/rooms.png" alt=""><span>2 комнаты</span></div>
+                  <div class="specifications-item"><img src="img/similar/square.png" alt=""><span>54 м²</span></div>
+                </div>
+                <p class="text-2">Ленинградский проспект, 37</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="similar-slide">
+              <div class="similar-slide-img">
+                <img src="img/apartament/apart-img-1.jpg" alt="">
+              </div>
+              <div class="similar-slide-content">
+                <div class="similar-price">
+                  <div class="price"><div class="price-progress"></div><span>19 800 000 ₽</span></div>
+                </div>
+                <div class="heading-3">57,1 м², 2-комнатная квартира</div>
+                <div class="specifications">
+                  <div class="specifications-item"><img src="img/similar/rooms.png" alt=""><span>2 комнаты</span></div>
+                  <div class="specifications-item"><img src="img/similar/square.png" alt=""><span>54 м²</span></div>
+                </div>
+                <p class="text-2">Ленинградский проспект, 37</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container--fluid">
+    <ul class="footer-menu">
+      <li><a href="services.html">услуги</a></li>
+      <li><a href="catalog.html">каталог</a></li>
+      <li><a href="#">квартиры</a></li>
+      <li><a href="news.html">новости</a></li>
+      <li><a href="about.html">о компании</a></li>
+      <li><a href="contacts.html">контакты</a></li>
+    </ul>
+    <ul class="footer-nav">
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Загородная недвижимость</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li>Продажа</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Таунхаусы</a></li>
+            <li><a href="#">Коттеджные поселки</a></li>
+          </ul>
+          <ul>
+            <li>Аренда</li>
+            <li><a href="#">Коттеджи</a></li>
+            <li><a href="#">Участки</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Городская недвижимость</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li>Продажа</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+          <ul>
+            <li>Аренда</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Зарубежная недвижимость</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li>Продажа</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+          <ul>
+            <li>Аренда</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Офисы</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li><a href="#">Коворкинги</a></li>
+            <li><a href="#">Бизнес–центры</a></li>
+            <li><a href="#">Бизнес–парк</a></li>
+            <li><a href="#">Особняк для офиса</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="footer-info">
+      <li class="footer-info__group">
+        <img src="img/footer-logo.svg" class="footer-logo" alt="">
+        <div class="footer-info__copy">
+          <span>© 2022 kf.expert Все права защищены</span>
+          <span>Официальный сайт Knight Frank Russia</span>
+        </div>
+        <a href="#" class="footer-info__link">Соглашение об обработке персональных данных</a>
+      </li>
+      <li class="footer-info__group">
+        <a href="tel:+79670643224" class="footer-info__title footer-info__title-link">+7 (967) 064–32–24</a>
+        <a href="#" class="btn-border btn-md">Позвоните мне</a>
+      </li>
+      <li class="footer-info__group">
+        <h4 class="footer-info__title">Наши социальные сети:</h4>
+        <ul class="footer-social">
+          <li>
+            <img src="img/footer/yappimedia.svg" alt="">
+            <a href="#">Yappi.media</a>
+          </li>
+          <li>
+            <img src="img/footer/telegram.svg" alt="">
+            <a href="#">Telegram</a>
+          </li>
+          <li>
+            <img src="img/footer/youtube.svg" alt="">
+            <a href="#">Youtube</a>
+          </li>
+          <li>
+            <img src="img/footer/vk.svg" alt="">
+            <a href="#">ВКонтакте</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-info__group">
+        <h4 class="footer-info__title">Сделано в</h4>
+        <a href="#" class="webmolot-logo"><img src="img/footer/webmolot.jpg" alt=""></a>
+      </li>
+    </ul>
+    <div class="footer-copy">
+      Настоящим информируем вас о том, что вся информация, размещенная на данном сайте, ни при каких обстоятельствах не может
+      признаваться публичной офертой в соответствии со ст. 437.2 Гражданского кодекса РФ. Копирование и воспроизведение
+      материалов этого сайта возможно с согласия администрации сайта. Посещая сайт https://kf.expert, вы даете согласие на
+      обработку данных cookies и иных пользовательских данных, сбор которых автоматически осуществляется АО «Найт Фрэнк»
+      (127006, г. Москва, Воротниковский пер., д. 8, стр. 1) на условиях <a href="#">«Положения об обработке персональных данных АО «Найт
+      Фрэнк».</a>
+    </div>
+  </div>
+</footer>
+
+    <!--------Modal-------->
+
+<div class="state contacts-state" data-state="contacts">
+	<div class="state-box">
+		<div class="state-heading">
+			<div class="heading-4">Контакты:</div>
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="contacts-state-group">
+			<a href="#" class="btn btn-md"><i class="icomoon icon-calling-bold"></i><span>+7 (967) 064–32–24</span></a>
+			<a href="#" class="btn btn-md btn-tg">Написать в Telegram</a>
+			<a href="#" class="btn btn-md btn-wa">Написать в WhatsApp</a>
+			<a href="#" class="btn btn-md btn-vb">Написать в Viber</a>
+		</div>
+	</div>
+</div>
+
+<div class="state" data-state="login">
+	<div class="state-box">
+		<div class="state-heading">
+			<img src="img/modal-logo.svg" alt="">
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="heading-3">Авторизация</div>
+		<form action="#" class="form">
+			<div class="form-group">
+				<span class="form-group-title">Логин</span>
+				<label for="" class="form-label">
+					<input type="text" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Пароль</span>
+				<label for="" class="form-label">
+					<input type="password" name="password" id="loginPasswordInput" class="form-input password-input" placeholder="">
+					<a href="#" class="password-control" id="loginPasswordControl"></a>
+				</label>
+				<a href="#" class="form-link">забыли пароль?</a>
+			</div>
+			<button type="submit" class="btn btn-lg">Войти в аккаунт</button>
+		</form>
+		<div class="form-other">
+			<div class="form-other-title">Войти в аккаунт через:</div>
+			<div class="form-other-btns">
+				<a href="#" class="form-other-btn">
+					<img src="img/modal/google.svg" alt="">
+					Google
+				</a>
+				<a href="#" class="form-other-btn">
+					<img src="img/modal/vk.svg" alt="">
+					Вконтакте
+				</a>
+			</div>
+			<div class="form-other-link">У вас нет аккаунта? <a href="#" class="to-state" data-state="sign-up">Зарегистрируйтесь</a></div>
+		</div>
+	</div>
+</div>
+
+<div class="state" data-state="sign-up">
+	<div class="state-box">
+		<div class="state-heading">
+			<img src="img/modal-logo.svg" alt="">
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="heading-3">Регистрация аккаунта</div>
+		<form action="#" class="form">
+			<div class="form-group">
+				<span class="form-group-title">Логин</span>
+				<label for="" class="form-label">
+					<input type="text" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Электронная почта</span>
+				<label for="" class="form-label">
+					<input type="email" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Пароль</span>
+				<label for="" class="form-label">
+					<input type="password" name="password" id="signPasswordInput" class="form-input password-input" placeholder="">
+					<a href="#" class="password-control" id="signPasswordControl"></a>
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Повторите пароль</span>
+				<label for="" class="form-label">
+					<input type="password" name="password" id="signVerifyPasswordInput" class="form-input password-input" placeholder="">
+					<a href="#" class="password-control" id="signVerifyPasswordControl"></a>
+				</label>
+			</div>
+			<button type="submit" class="btn btn-lg">Зарегистрироваться</button>
+		</form>
+		<div class="form-other">
+			<div class="form-other-link">Уже есть аккаунт? <a href="#" class="to-state" data-state="login">Войти</a></div>
+		</div>
+	</div>
+</div>
+
+<div class="state" data-state="connection">
+	<div class="state-box">
+		<div class="state-heading">
+			<img src="img/modal-logo.svg" alt="">
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="heading-3">Позвоните мне</div>
+		<form action="#" class="form">
+			<div class="form-group">
+				<span class="form-group-title">Имя</span>
+				<label for="" class="form-label">
+					<input type="text" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Телефон</span>
+				<label for="" class="form-label">
+					<input type="number" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Электронная почта</span>
+				<label for="" class="form-label">
+					<input type="email" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Сообщение</span>
+				<label for="" class="form-label">
+					<textarea name="" id="" cols="30" rows="5" class="form-input"></textarea>
+				</label>
+			</div>
+			<label for="checkboxCta" class="accept checkbox">
+				<input type="checkbox" id="checkboxCta">
+				<span>Даю согласие на обработку <a href="#">персональных данных</a></span>
+			</label>
+			<button type="submit" class="btn btn-lg">Позвоните мне</button>
+		</form>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Script-->
+<link href="css/fancybox.css" rel="stylesheet">
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

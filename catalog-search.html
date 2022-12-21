@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог недвижимости</title>
+
+  <!-- favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.svg">
+<link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<link rel="icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<meta name="msapplication-tilecolor" content="#fff">
+<meta name="msapplication-tileimage" content="img/favicon/favicon.svg">
+<meta name="theme-color" content="#0d53db">
+
+<!-- CSS -->
+<link href="css/fancybox.min.css" type="text/css" rel="stylesheet">
+<!-- SWIPER -->
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+<!-- CHOICES -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+<link href="css/style.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+<header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo">
+      <img src="img/logo-black.png" alt="">
+    </a>
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">главная</a></li>
+        <li class="nav__item"><a href="catalog.html" class="nav__link nav__link-active">каталог</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">квартиры</a></li>
+        <li class="nav__item"><a href="services.html" class="nav__link">услуги</a></li>
+        <li class="nav__item"><a href="news.html" class="nav__link">новости</a></li>
+        <li class="nav__item"><a href="about.html" class="nav__link">о компании</a></li>
+        <li class="nav__item"><a href="contacts.html" class="nav__link">контакты</a></li>
+      </ul>
+      <ul class="course__list">
+        <li class="course__item">
+          <div class="course__item-name">BTC</div>
+          <div class="course__item-rate green-color">$ 43 212,3</div>
+        </li>
+        <li class="course__item">
+          <div class="course__item-name">ETH</div>
+          <div class="course__item-rate green-color">$ 2 887,61</div>
+        </li>
+        <li class="course__item">
+          <div class="course__item-name">USD</div>
+          <div class="course__item-rate green-color">117,43 ₽</div>
+        </li>
+        <li class="course__item">
+          <div class="course__item-name">CNY</div>
+          <div class="course__item-rate red-color">16,36 ₽</div>
+        </li>
+      </ul>
+      <div class="nav__close" id="nav-close">
+        <i class="icomoon icon-close"></i>
+      </div>
+    </nav>
+    <div class="nav__btns">
+      <a href="#" class="btn-icon">
+        <i class="icomoon icon-favourites"></i>
+      </a>
+      <div class="lang">
+        <div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+        <div class="lang-content">
+          <div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+          <div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+          <div class="lang-btn"><img src="img/lang/ru.jpg" alt=""></div>
+        </div>
+      </div>
+      <a href="#" class="btn-icon">
+        <i class="icomoon icon-search"></i>
+      </a>
+      <a href="#" class="btn-icon">
+        <i class="icomoon icon-logout"></i>
+      </a>
+      <!-- Toggle button -->
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="icomoon icon-menu"></i>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="page-catalog">
+
+      <!-- breadcrumbs -->
+<div class="breadcrumbs">
+  <nav class="container">
+    <a href="index.html">Главная</a>
+    <span>Каталог</span>
+  </nav>
+</div>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="heading">
+            <h1 class="heading-1">Каталог недвижимости</h1>
+          </div>
+          <div class="filter filter-open">
+            <ul class="filter-nav">
+              <li><a href="#" class="active">Купить</a></li>
+              <li><a href="#">Снять</a></li>
+              <li><a href="#">Посуточно</a></li>
+              <li><a href="#">VR</a></li>
+            </ul>
+            <div class="filter-row-3">
+              <div class="filter-col filter-col-2">
+                <div class="select select-house">
+                  <select class="form-input select-default" name="house">
+                    <option value="">Квартиру</option>
+                    <option value="">Другое</option>
+                    <option value="">Другое другое</option>
+                    <option value="">Другое другое другое</option>
+                  </select>
+                </div>
+                <div class="filter-radio-group">
+                  <span class="filter-radio-group-title">Студия</span>
+                  <label for="1" class="filter-radio">
+                    <input type="radio" id="1" name="studia" class="filter-radio__input" checked>
+                    <span>1</span>
+                  </label>
+                  <label for="2" class="filter-radio">
+                    <input type="radio" id="2" name="studia" class="filter-radio__input">
+                    <span>2</span>
+                  </label>
+                  <label for="3" class="filter-radio">
+                    <input type="radio" id="3" name="studia" class="filter-radio__input">
+                    <span>3</span>
+                  </label>
+                  <label for="4+" class="filter-radio">
+                    <input type="radio" id="4+" name="studia" class="filter-radio__input">
+                    <span>4+</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-col">
+                <label for="" class="form-label form-label-range">
+                  <div class="form-range-group">
+                    от <input id="start" type="number" value=""> ₽
+                  </div>
+                  <span class="form-range-separator">–</span>
+                  <div class="form-range-group">
+                    до <input id="end" type="number" value=""> ₽
+                  </div>
+                </label>
+              </div>
+              <div class="filter-col">
+                <label for="" class="form-label form-label--location">
+                  <input type="text" name="" id="" class="form-input" placeholder="Город, адрес, район, ЖК">
+                </label>
+              </div>
+            </div>
+            <div class="filter-row-3">
+              <div class="filter-col">
+                <div class="filter-col-title">Общая площадь:</div>
+                <label for="" class="form-label form-label-range">
+                  <div class="form-range-group">
+                    от <input id="" type="number" value="">
+                  </div>
+                  <span class="form-range-separator">–</span>
+                  <div class="form-range-group">
+                    до <input id="" type="number" value=""> м²
+                  </div>
+                </label>
+              </div>
+              <div class="filter-col">
+                <div class="filter-col-title">Площадь кухни:</div>
+                <label for="" class="form-label form-label-range">
+                  <div class="form-range-group">
+                    от <input id="" type="number" value="">
+                  </div>
+                  <span class="form-range-separator">–</span>
+                  <div class="form-range-group">
+                    до <input id="" type="number" value=""> м²
+                  </div>
+                </label>
+              </div>
+              <div class="filter-col">
+                <div class="filter-col-title">Жилая площадь:</div>
+                <label for="" class="form-label form-label-range">
+                  <div class="form-range-group">
+                    от <input id="" type="number" value="">
+                  </div>
+                  <span class="form-range-separator">–</span>
+                  <div class="form-range-group">
+                    до <input id="" type="number" value=""> м²
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="filter-row-flex">
+              <div class="filter-col">
+                <div class="filter-col-title">Срок аренды</div>
+                <div class="radio-group">
+                  <label for="time1" class="radio">
+                    <input type="radio" id="time1" name="time" class="radio__input">
+                    <span>Неважно</span>
+                  </label>
+                  <label for="time2" class="radio">
+                    <input type="radio" id="time2" name="time" class="radio__input">
+                    <span>От года</span>
+                  </label>
+                  <label for="time3" class="radio">
+                    <input type="radio" id="time3" name="time" class="radio__input">
+                    <span>На несколько месяцев</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-col">
+                <div class="filter-col-title">До метро</div>
+                <div class="radio-group">
+                  <label for="metro1" class="radio">
+                    <input type="radio" id="metro1" name="metro" class="radio__input">
+                    <span>Неважно</span>
+                  </label>
+                  <label for="metro2" class="radio">
+                    <input type="radio" id="metro2" name="metro" class="radio__input">
+                    <span>Пешком</span>
+                  </label>
+                  <label for="metro3" class="radio">
+                    <input type="radio" id="metro3" name="metro" class="radio__input">
+                    <span>Транспорт</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-col">
+                <div class="filter-col-title">Дом</div>
+                <div class="radio-group">
+                  <label for="dom1" class="radio">
+                    <input type="radio" id="dom1" name="dom" class="radio__input">
+                    <span>Вторичка</span>
+                  </label>
+                  <label for="dom2" class="radio">
+                    <input type="radio" id="dom2" name="dom" class="radio__input">
+                    <span>Новостройки</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-row-flex">
+              <div class="filter-col">
+                <div class="filter-col-title">Удобства</div>
+                <div class="checkbox-group">
+                  <label for="udobstva1" class="checkbox">
+                    <input type="checkbox" id="udobstva1">
+                    <span>Кондиционер</span>
+                  </label>
+                  <label for="udobstva2" class="checkbox">
+                    <input type="checkbox" id="udobstva2">
+                    <span>Микроволновка</span>
+                  </label>
+                  <label for="udobstva3" class="checkbox">
+                    <input type="checkbox" id="udobstva3">
+                    <span>Балкон/лоджия</span>
+                  </label>
+                  <label for="udobstva4" class="checkbox">
+                    <input type="checkbox" id="udobstva4">
+                    <span>Ремонт</span>
+                  </label>
+                  <label for="udobstva5" class="checkbox">
+                    <input type="checkbox" id="udobstva5">
+                    <span>Стиральная машина</span>
+                  </label>
+                  <label for="udobstva6" class="checkbox">
+                    <input type="checkbox" id="udobstva6">
+                    <span>Пылесос</span>
+                  </label>
+                  <label for="udobstva7" class="checkbox">
+                    <input type="checkbox" id="udobstva7">
+                    <span>Кухонная плита</span>
+                  </label>
+                  <label for="udobstva8" class="checkbox">
+                    <input type="checkbox" id="udobstva8">
+                    <span>Кондиционер</span>
+                  </label>
+                  <label for="udobstva9" class="checkbox">
+                    <input type="checkbox" id="udobstva9">
+                    <span>Микроволновка</span>
+                  </label>
+                  <label for="udobstva10" class="checkbox">
+                    <input type="checkbox" id="udobstva10">
+                    <span>Балкон/лоджия</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-row-flex">
+              <div class="filter-col">
+                <div class="filter-col-title">Условия проживания</div>
+                <div class="radio-group">
+                  <label for="uslovia1" class="radio">
+                    <input type="radio" id="uslovia1" name="uslovia" class="radio__input">
+                    <span>Неважно</span>
+                  </label>
+                  <label for="uslovia2" class="radio">
+                    <input type="radio" id="uslovia2" name="uslovia" class="radio__input">
+                    <span>Можно с детьми</span>
+                  </label>
+                  <label for="uslovia3" class="radio">
+                    <input type="radio" id="uslovia3" name="uslovia" class="radio__input">
+                    <span>Можно с животными</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-col">
+                <div class="filter-col-title">Планировка</div>
+                <div class="radio-group">
+                  <label for="planirovka1" class="radio">
+                    <input type="radio" id="planirovka1" name="planirovka" class="radio__input">
+                    <span>Неважно</span>
+                  </label>
+                  <label for="planirovka2" class="radio">
+                    <input type="radio" id="planirovka2" name="planirovka" class="radio__input">
+                    <span>Смежная</span>
+                  </label>
+                  <label for="planirovka3" class="radio">
+                    <input type="radio" id="planirovka3" name="planirovka" class="radio__input">
+                    <span>Изолированная</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter-col">
+                <div class="filter-col-title">Апартаменты</div>
+                <div class="radio-group">
+                  <label for="apart1" class="radio">
+                    <input type="radio" id="apart1" name="apart" class="radio__input">
+                    <span>Неважно</span>
+                  </label>
+                  <label for="apart2" class="radio">
+                    <input type="radio" id="apart2" name="apart" class="radio__input">
+                    <span>Без апартаментов</span>
+                  </label>
+                  <label for="apart3" class="radio">
+                    <input type="radio" id="apart3" name="apart" class="radio__input">
+                    <span>Только апартаменты</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter-btns">
+              <div class="filter-btns-left">
+                <button class="filter-close">
+                  Свернуть
+                  <i class="icomoon icon-chevron-up"></i>
+                </button>
+                <button class="filter-reset">
+                  Сбросить всё
+                </button>
+              </div>
+              <div class="filter-btns-right">
+                <button class="btn-border btn-lg">
+                  <i class="icomoon icon-location-bold"></i>
+                  Смотреть на карте
+                </button>
+                <button class="btn btn-lg">
+                  Показать 100 объявлений
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cards catalog-cards">
+            <div class="heading">
+              <h1 class="heading-1">Результаты поиска:</h1>
+            </div>
+            <div class="cards-item">
+              <!-- Swiper -->
+              <div class="cards-slider">
+                <div class="btns-group">
+                  <a href="#" class="btn-w"><img src="img/icons/3d.png" alt=""><span>3D-просмотр</span></a>
+                </div>
+                <span class="gallery-value">+12</span>
+                <div class="swiper gallerySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper3.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next--fluid"></div>
+                  <div class="swiper-button-prev--fluid"></div>
+                  <div class="swiper-pagination--fluid"></div>
+                </div>
+              </div>
+              <div class="cards-content">
+                <div class="cards-info">
+                  <div class="cards-info-wrapper">
+                    <div class="cards-info-main">
+                      <div class="cards-heading">
+                        <h3 class="heading-3">3-к, Логинова, 19</h3>
+                        <ul class="cards-specifications">
+                          <li>Площадь: 150 м²</li>
+                          <li>Этаж: 2 из 19</li>
+                        </ul>
+                      </div>
+                      <div class="builder">
+                        <div class="builder-title">Москва</div>
+                        <div class="builder-info">
+                          <div class="builder-name">ЖК Optima Development</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cards-info-second">
+                      <div class="cards-price">
+                        <div class="cards-price-wrapper">
+                          <div class="cards-price-main">19 800 000 ₽</div>
+                        </div>
+                        <div class="cards-price-second">360 161 ₽/м2</div>
+                      </div>
+                      <div class="cards-date">Добавлено: 15.03.22</div>
+                      <div class="cards-views">119 просмотров</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards-nav">
+                  <a href="#" class="btn-border btn-lg to-state" data-state="contacts"><i
+                      class="icomoon icon-calling-bold"></i><span>Показать контакты</span></a>
+                  <a href="#" class="btn-ic"><i class="icomoon icon-favourites"></i></a>
+                  <a href="#" class="btn-ic"><i class="icomoon icon-location"></i></a>
+                  <a href="img/logo-black.png" download="filename" class="btn-ic"><i class="icomoon icon-download"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="cards-item">
+              <!-- Swiper -->
+              <div class="cards-slider">
+                <div class="btns-group">
+                  <a href="#" class="btn-w"><img src="img/icons/3d.png" alt=""><span>3D-просмотр</span></a>
+                </div>
+                <span class="gallery-value">+12</span>
+                <div class="swiper gallerySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/kp-bl/kpGallerySwiper3.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next--fluid"></div>
+                  <div class="swiper-button-prev--fluid"></div>
+                  <div class="swiper-pagination--fluid"></div>
+                </div>
+              </div>
+              <div class="cards-content">
+                <div class="cards-info">
+                  <div class="cards-info-wrapper">
+                    <div class="cards-info-main">
+                      <div class="cards-heading">
+                        <h3 class="heading-3">3-к, Логинова, 19</h3>
+                        <ul class="cards-specifications">
+                          <li>Площадь: 150 м²</li>
+                          <li>Этаж: 2 из 19</li>
+                        </ul>
+                      </div>
+                      <div class="builder">
+                        <div class="builder-title">Москва</div>
+                        <div class="builder-info">
+                          <div class="builder-name">ЖК Optima Development</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cards-info-second">
+                      <div class="cards-price">
+                        <div class="cards-price-wrapper">
+                          <div class="cards-price-main">19 800 000 ₽</div>
+                        </div>
+                        <div class="cards-price-second">360 161 ₽/м2</div>
+                      </div>
+                      <div class="cards-date">Добавлено: 15.03.22</div>
+                      <div class="cards-views">119 просмотров</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards-nav">
+                  <a href="#" class="btn-border btn-lg to-state" data-state="contacts"><i
+                      class="icomoon icon-calling-bold"></i><span>Показать контакты</span></a>
+                  <a href="#" class="btn-ic"><i class="icomoon icon-favourites"></i></a>
+                  <a href="#" class="btn-ic"><i class="icomoon icon-location"></i></a>
+                  <a href="img/logo-black.png" download="filename" class="btn-ic"><i class="icomoon icon-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="request">
+        <div class="container">
+          <div class="request-wrapper">
+            <div class="heading">
+              <h3 class="heading-3">Не можете найти подходящий вариант?</h3>
+              <p class="text-2">Мы сможем вам почоь! Оставьте свои контактные данные и с Вами свяжется наш риэлтор.</p>
+            </div>
+            <form action="#" class="form">
+              <label for="" class="form-label">
+                <input type="number" name="" id="" class="form-input form-input--big" placeholder="Ваш номер телефона">
+              </label>
+              <div class="col">
+                <button class="btn btn-xl">Оставить заявку</button>
+                <label for="checkboxRequest" class="accept checkbox">
+                  <input type="checkbox" id="checkboxRequest">
+                  <span>Даю согласие на обработку <a href="#">персональных данных</a></span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container--fluid">
+    <ul class="footer-menu">
+      <li><a href="services.html">услуги</a></li>
+      <li><a href="catalog.html">каталог</a></li>
+      <li><a href="#">квартиры</a></li>
+      <li><a href="news.html">новости</a></li>
+      <li><a href="about.html">о компании</a></li>
+      <li><a href="contacts.html">контакты</a></li>
+    </ul>
+    <ul class="footer-nav">
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Загородная недвижимость</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li>Продажа</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Таунхаусы</a></li>
+            <li><a href="#">Коттеджные поселки</a></li>
+          </ul>
+          <ul>
+            <li>Аренда</li>
+            <li><a href="#">Коттеджи</a></li>
+            <li><a href="#">Участки</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Городская недвижимость</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li>Продажа</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+          <ul>
+            <li>Аренда</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Зарубежная недвижимость</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li>Продажа</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+          <ul>
+            <li>Аренда</li>
+            <li><a href="#">Квартира</a></li>
+            <li><a href="#">Пентхаус</a></li>
+            <li><a href="#">Особняк</a></li>
+            <li><a href="#">Новостройки</a></li>
+            <li><a href="#">Апартаменты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="footer-nav__item">
+        <div class="footer-nav__item-title">Офисы</div>
+        <div class="footer-nav__item-groups">
+          <ul>
+            <li><a href="#">Коворкинги</a></li>
+            <li><a href="#">Бизнес–центры</a></li>
+            <li><a href="#">Бизнес–парк</a></li>
+            <li><a href="#">Особняк для офиса</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <ul class="footer-info">
+      <li class="footer-info__group">
+        <img src="img/footer-logo.svg" class="footer-logo" alt="">
+        <div class="footer-info__copy">
+          <span>© 2022 kf.expert Все права защищены</span>
+          <span>Официальный сайт Knight Frank Russia</span>
+        </div>
+        <a href="#" class="footer-info__link">Соглашение об обработке персональных данных</a>
+      </li>
+      <li class="footer-info__group">
+        <a href="tel:+79670643224" class="footer-info__title footer-info__title-link">+7 (967) 064–32–24</a>
+        <a href="#" class="btn-border btn-md">Позвоните мне</a>
+      </li>
+      <li class="footer-info__group">
+        <h4 class="footer-info__title">Наши социальные сети:</h4>
+        <ul class="footer-social">
+          <li>
+            <img src="img/footer/yappimedia.svg" alt="">
+            <a href="#">Yappi.media</a>
+          </li>
+          <li>
+            <img src="img/footer/telegram.svg" alt="">
+            <a href="#">Telegram</a>
+          </li>
+          <li>
+            <img src="img/footer/youtube.svg" alt="">
+            <a href="#">Youtube</a>
+          </li>
+          <li>
+            <img src="img/footer/vk.svg" alt="">
+            <a href="#">ВКонтакте</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-info__group">
+        <h4 class="footer-info__title">Сделано в</h4>
+        <a href="#" class="webmolot-logo"><img src="img/footer/webmolot.jpg" alt=""></a>
+      </li>
+    </ul>
+    <div class="footer-copy">
+      Настоящим информируем вас о том, что вся информация, размещенная на данном сайте, ни при каких обстоятельствах не может
+      признаваться публичной офертой в соответствии со ст. 437.2 Гражданского кодекса РФ. Копирование и воспроизведение
+      материалов этого сайта возможно с согласия администрации сайта. Посещая сайт https://kf.expert, вы даете согласие на
+      обработку данных cookies и иных пользовательских данных, сбор которых автоматически осуществляется АО «Найт Фрэнк»
+      (127006, г. Москва, Воротниковский пер., д. 8, стр. 1) на условиях <a href="#">«Положения об обработке персональных данных АО «Найт
+      Фрэнк».</a>
+    </div>
+  </div>
+</footer>
+
+    <!--------Modal-------->
+
+<div class="state contacts-state" data-state="contacts">
+	<div class="state-box">
+		<div class="state-heading">
+			<div class="heading-4">Контакты:</div>
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="contacts-state-group">
+			<a href="#" class="btn btn-md"><i class="icomoon icon-calling-bold"></i><span>+7 (967) 064–32–24</span></a>
+			<a href="#" class="btn btn-md btn-tg">Написать в Telegram</a>
+			<a href="#" class="btn btn-md btn-wa">Написать в WhatsApp</a>
+			<a href="#" class="btn btn-md btn-vb">Написать в Viber</a>
+		</div>
+	</div>
+</div>
+
+<div class="state" data-state="login">
+	<div class="state-box">
+		<div class="state-heading">
+			<img src="img/modal-logo.svg" alt="">
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="heading-3">Авторизация</div>
+		<form action="#" class="form">
+			<div class="form-group">
+				<span class="form-group-title">Логин</span>
+				<label for="" class="form-label">
+					<input type="text" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Пароль</span>
+				<label for="" class="form-label">
+					<input type="password" name="password" id="loginPasswordInput" class="form-input password-input" placeholder="">
+					<a href="#" class="password-control" id="loginPasswordControl"></a>
+				</label>
+				<a href="#" class="form-link">забыли пароль?</a>
+			</div>
+			<button type="submit" class="btn btn-lg">Войти в аккаунт</button>
+		</form>
+		<div class="form-other">
+			<div class="form-other-title">Войти в аккаунт через:</div>
+			<div class="form-other-btns">
+				<a href="#" class="form-other-btn">
+					<img src="img/modal/google.svg" alt="">
+					Google
+				</a>
+				<a href="#" class="form-other-btn">
+					<img src="img/modal/vk.svg" alt="">
+					Вконтакте
+				</a>
+			</div>
+			<div class="form-other-link">У вас нет аккаунта? <a href="#" class="to-state" data-state="sign-up">Зарегистрируйтесь</a></div>
+		</div>
+	</div>
+</div>
+
+<div class="state" data-state="sign-up">
+	<div class="state-box">
+		<div class="state-heading">
+			<img src="img/modal-logo.svg" alt="">
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="heading-3">Регистрация аккаунта</div>
+		<form action="#" class="form">
+			<div class="form-group">
+				<span class="form-group-title">Логин</span>
+				<label for="" class="form-label">
+					<input type="text" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Электронная почта</span>
+				<label for="" class="form-label">
+					<input type="email" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Пароль</span>
+				<label for="" class="form-label">
+					<input type="password" name="password" id="signPasswordInput" class="form-input password-input" placeholder="">
+					<a href="#" class="password-control" id="signPasswordControl"></a>
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Повторите пароль</span>
+				<label for="" class="form-label">
+					<input type="password" name="password" id="signVerifyPasswordInput" class="form-input password-input" placeholder="">
+					<a href="#" class="password-control" id="signVerifyPasswordControl"></a>
+				</label>
+			</div>
+			<button type="submit" class="btn btn-lg">Зарегистрироваться</button>
+		</form>
+		<div class="form-other">
+			<div class="form-other-link">Уже есть аккаунт? <a href="#" class="to-state" data-state="login">Войти</a></div>
+		</div>
+	</div>
+</div>
+
+<div class="state" data-state="connection">
+	<div class="state-box">
+		<div class="state-heading">
+			<img src="img/modal-logo.svg" alt="">
+			<div class="icomoon icon-close"></div>
+		</div>
+		<div class="heading-3">Позвоните мне</div>
+		<form action="#" class="form">
+			<div class="form-group">
+				<span class="form-group-title">Имя</span>
+				<label for="" class="form-label">
+					<input type="text" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Телефон</span>
+				<label for="" class="form-label">
+					<input type="number" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Электронная почта</span>
+				<label for="" class="form-label">
+					<input type="email" name="" id="" class="form-input" placeholder="">
+				</label>
+			</div>
+			<div class="form-group">
+				<span class="form-group-title">Сообщение</span>
+				<label for="" class="form-label">
+					<textarea name="" id="" cols="30" rows="5" class="form-input"></textarea>
+				</label>
+			</div>
+			<label for="checkboxCta" class="accept checkbox">
+				<input type="checkbox" id="checkboxCta">
+				<span>Даю согласие на обработку <a href="#">персональных данных</a></span>
+			</label>
+			<button type="submit" class="btn btn-lg">Позвоните мне</button>
+		</form>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Script-->
+<link href="css/fancybox.css" rel="stylesheet">
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
